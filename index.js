@@ -45,6 +45,7 @@ function servirFichero(respuesta,ruta,tipo,status){
 const directorioEstatico = join(__dirname,"publica");
 
 
+// Creacion del servidor
 http.createServer((peticion,respuesta) => {
 
     if(peticion.url == "/"){
@@ -61,7 +62,7 @@ http.createServer((peticion,respuesta) => {
         servirFichero(respuesta,join(__dirname,"404.html"),tipo("html"),404);
     });
 
-}).listen(4000);
+}).listen(process.env.PORT || 4000);
 
 
 
