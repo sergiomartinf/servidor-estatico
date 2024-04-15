@@ -42,7 +42,7 @@ function servirFichero(respuesta,ruta,tipo,status){
 
 
 // __dirname te da la ruta completa
-const directorioEstatico = join(__dirname,"publica");
+const directorioEstatico = join(__dirname,"Publica");
 
 
 // Creacion del servidor
